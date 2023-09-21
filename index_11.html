@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charste="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=deivice-width, initial-scale=1.0">
+        <title>Swipejs</title>
+        <!-- Link Swiper's CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="style_12.css">
+    </head>
+    <body>
+        <h1>Certificates</h1>
+
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="Pictures/6.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="Pictures/5.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="Pictures/4.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="Pictures/2.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="Pictures/1.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="Pictures/3.jpg" alt="">
+            </div>
+            
+        </div>
+    </div>
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 15,
+                stretch: 0,
+                depth: 300,
+                modifier: 1,
+                slideShadows: true,
+            },
+            loop: true,
+        });
+    </script>
+    </body>
+</html>

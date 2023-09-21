@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: #fff;
+    font-size: 30px;
+    margin-top: 30px;
+    padding: 2rem 9%;
+}
+
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    height: 100%;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 720px;
+    height: 600px;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, transparent, #0002, #0004);
+}
